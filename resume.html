@@ -6,7 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Mon portfilio</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mon portfolio</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
     <!-- Custom Google font-->
@@ -29,16 +31,33 @@
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
+          <a class="navbar-brand" href="index.html"
+            ><span class="fw-bolder text-primary">Lior Lichten</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
+                <a class="nav-link" href="resume.html">CV</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">Portfolio</a>
+                <a class="nav-link" href="skills.html">Compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projets</a>
               </li>
             </ul>
           </div>
@@ -48,16 +67,157 @@
       <div class="container px-5 my-5">
         <div class="text-center mb-5">
           <h1 class="display-5 fw-bolder mb-0">
-            <span class="text-gradient d-inline">Resume</span>
+            <span class="text-gradient d-inline">Curriculum vitae</span>
           </h1>
         </div>
         <div class="row gx-5 justify-content-center">
-          <iframe
-            src="assets/CV Lior Lichten 2023 Java.pdf"
-            width="100%"
-            height="1000px"
-          >
-          </iframe>
+          <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <!-- Experience Section-->
+            <section>
+              <div
+                class="d-flex align-items-center justify-content-between mb-4"
+              >
+                <h2 class="text-primary fw-bolder mb-0">Experiences</h2>
+                <!-- Download resume button-->
+                <!-- Note: Set the link href target to a PDF file within your project-->
+                <a
+                  class="btn btn-primary px-4 py-3"
+                  href="assets/CV Lior Lichten 2024.pdf"
+                >
+                  <div class="d-inline-block bi bi-download me-2"></div>
+                  Télécharger le cv
+                </a>
+              </div>
+              <!-- Experience Card 1-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-primary fw-bolder mb-2">2024</div>
+                        <div class="small fw-bolder">Stage en</div>
+                        <div class="small text-muted">Entreprise</div>
+                        <div class="small text-muted">Lieu</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Experience Card 2-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-primary fw-bolder mb-2">2023</div>
+                        <div class="small fw-bolder">
+                          Stage en développement no/low code
+                        </div>
+                        <div class="small text-muted">Coeur du Web</div>
+                        <div class="small text-muted">Cachan 94230</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      À l'issue de ma deuxième année, j'ai effectué un stage en
+                      développement web chez Coeur du web. Au cours de cette
+                      expérience, j'ai eu l'opportunité de découvrir le no/low
+                      code notamment en utilisant le framework Bubble et React.
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Education Section-->
+            <section>
+              <h2 class="text-secondary fw-bolder mb-4">Formation</h2>
+              <!-- Education Card 1-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-secondary fw-bolder mb-2">
+                          2021 - 2024
+                        </div>
+                        <div class="mb-2">
+                          <div class="small fw-bolder">IUT de Montreuil</div>
+                          <div class="small text-muted">Montreuil, 93100</div>
+                        </div>
+                        <div class="fst-italic">
+                          <div class="small text-muted">BUT Informatique</div>
+                          <div class="small text-muted">
+                            Parcours réalisation d'applications : conception,
+                            développement, validation
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        Après mon baccalauréat, je me suis orienté vers
+                        l'informatique en rejoignant l'IUT de Montreuil. Au
+                        terme de ma deuxième année, j'ai opté pour le parcours
+                        "réalisation d'applications" qui met l'accent sur la
+                        conception, le développement et la validation de
+                        logiciels.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Education Card 2-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-secondary fw-bolder mb-2">
+                          2019 - 2021
+                        </div>
+                        <div class="mb-2">
+                          <div class="small fw-bolder">Lycée Arago</div>
+                          <div class="small text-muted">Paris</div>
+                        </div>
+                        <div class="fst-italic">
+                          <div class="small text-muted">
+                            Baccalauréat général
+                          </div>
+                          <div class="small text-muted">
+                            spécialités math, NSI
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        J'ai effectué ma scolarité au lycée Arago pendant trois
+                        années. Dès la classe de première, j'ai choisi la voie
+                        du bac général en optant pour les spécialités
+                        mathématiques, physique et numérique et sciences
+                        informatiques (NSI). En terminale, j'ai abandonné la
+                        physique et ai obtenu mon baccalauréat avec mention
+                        assez bien.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </main>
@@ -68,7 +228,7 @@
           class="row align-items-center justify-content-between flex-column flex-sm-row"
         >
           <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Lior Lichten 2023</div>
+            <div class="small m-0">Copyright &copy; Lior Lichten 2024</div>
           </div>
         </div>
       </div>

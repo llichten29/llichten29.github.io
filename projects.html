@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Mon portfilio</title>
+    <title>Mon portfolio</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
     <!-- Custom Google font-->
@@ -21,6 +21,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <!-- Devicon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
@@ -29,16 +35,33 @@
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
+          <a class="navbar-brand" href="index.html"
+            ><span class="fw-bolder text-primary">Lior Lichten</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
+                <a class="nav-link" href="resume.html">CV</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">Portfolio</a>
+                <a class="nav-link" href="skills.html">Compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projets</a>
               </li>
             </ul>
           </div>
@@ -49,50 +72,157 @@
         <div class="container px-5 mb-5">
           <div class="text-center mb-5">
             <h1 class="display-5 fw-bolder mb-0">
-              <span class="text-gradient d-inline">Portfolio</span>
+              <span class="text-gradient d-inline">Projets</span>
             </h1>
           </div>
           <div class="row gx-5 justify-content-center">
+            <!-- Project Card 1-->
             <div class="col-lg-11 col-xl-9 col-xxl-8">
-              <!-- Project Card 1-->
               <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                 <div class="card-body p-0">
                   <div class="d-flex align-items-center">
                     <div class="p-5">
-                      <h2 class="fw-bolder">Project Name 1</h2>
+                      <h2 class="fw-bolder">
+                        Finalisation refonte emploi du temps
+                      </h2>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eius at enim eum illum aperiam placeat esse? Mollitia
-                        omnis minima saepe recusandae libero, iste ad
-                        asperiores! Explicabo commodi quo itaque! Ipsam!
+                        Ce projet avait pour objectif de terminer la
+                        modernisation l'éditeur d'emploi du temps de l'IUT de
+                        Montreuil, qui montrait des signes de vieillissement.
+                        Ainsi, moi et mes 11 camarades avons repris le projet le
+                        plus avancé de refonte d'emploi du temps. Nous nous
+                        somme séparer en 2 équipes : <br />
+                        une équipe de développeur chargé de corrigé les bugs et
+                        d'implémenter les nouvelle fonctionnalité. <br />
+                        une équipe de testeur et de déploiment chargé de trouver
+                        les bug et de permettre le déploymement <br />
+                        J'étais dans l'équipe de développement
+                      </p>
+                      <i
+                        class="language-icon devicon-flask-original colored"
+                      ></i>
+                      <i
+                        class="language-icon devicon-angular-plain colored angular-icon"
+                      ></i>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/edt-portfolio.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                <div class="card-body p-0">
+                  <div class="d-flex align-items-center">
+                    <div class="p-5">
+                      <h2 class="fw-bolder">Covoit</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris quis mattis erat. Pellentesque non leo eu tellus
+                        suscipit eleifend nec at nibh. Maecenas et finibus arcu.
+                        Nam cursus lectus vitae nibh dictum pretium. Curabitur
+                        at aliquet purus. Quisque nisl dui, aliquam eget quam
+                        vitae, posuere tempor nisl. Nulla facilisi. Aliquam
+                        placerat, lacus nec aliquet sodales, tellus velit cursus
+                        augue, in vehicula neque lorem non lectus. Praesent
+                        sollicitudin quam leo. Etiam vestibulum ante nec purus
+                        imperdiet vulputate. Vestibulum sed auctor diam, in
+                        congue dolor. Nunc sollicitudin justo at elit molestie,
+                        sed pretium nunc condimentum.
                       </p>
                     </div>
                     <img
                       class="img-fluid"
-                      src="https://dummyimage.com/300x400/343a40/6c757d"
+                      src="assets/edt-portfolio.png"
                       alt="..."
                     />
                   </div>
                 </div>
               </div>
               <!-- Project Card 2-->
-              <div class="card overflow-hidden shadow rounded-4 border-0">
+              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                 <div class="card-body p-0">
                   <div class="d-flex align-items-center">
                     <div class="p-5">
-                      <h2 class="fw-bolder">Project Name 2</h2>
+                      <h2 class="fw-bolder">Enjoy your meal</h2>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eius at enim eum illum aperiam placeat esse? Mollitia
-                        omnis minima saepe recusandae libero, iste ad
-                        asperiores! Explicabo commodi quo itaque! Ipsam!
+                        "Enjoy Your Meal" est une application mobile que j'ai
+                        développée avec deux autres étudiants. Elle permet de
+                        créer et de partager des recettes de cuisine.
+                        L'application a été conçue avec Android Studio et le
+                        langage Java, tandis que l'API a été codée en PHP avec
+                        une base de données MySQL. "Enjoy Your Meal" offre une
+                        plateforme conviviale aux amateurs de cuisine pour
+                        qu'ils puissent partager leurs créations culinaires et
+                        explorer les recettes d'autres utilisateurs.
+                      </p>
+
+                      <i
+                        class="language-icon devicon-androidstudio-plain colored"
+                      ></i>
+                      <i
+                        class="language-icon devicon-java-plain-wordmark colored"
+                      ></i>
+                      <i class="language-icon devicon-php-plain colored"></i>
+                      <i
+                        class="language-icon devicon-mysql-original colored"
+                      ></i>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="assets/Enjoy your meal.jpg"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Project Card 3-->
+              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                <div class="card-body p-0">
+                  <div class="d-flex align-items-center">
+                    <div class="p-5">
+                      <h2 class="fw-bolder">L'univers du quizz</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris quis mattis erat. Pellentesque non leo eu tellus
+                        suscipit eleifend nec at nibh. Maecenas et finibus arcu.
+                        Nam cursus lectus vitae nibh dictum pretium. Curabitur
+                        at aliquet purus. Quisque nisl dui, aliquam eget quam
+                        vitae, posuere tempor nisl. Nulla facilisi. Aliquam
+                        placerat, lacus nec aliquet sodales, tellus velit cursus
+                        augue, in vehicula neque lorem non lectus. Praesent
+                        sollicitudin quam leo. Etiam vestibulum ante nec purus
+                        imperdiet vulputate. Vestibulum sed auctor diam, in
+                        congue dolor. Nunc sollicitudin justo at elit molestie,
+                        sed pretium nunc condimentum.
                       </p>
                     </div>
                     <img
                       class="img-fluid"
-                      src="https://dummyimage.com/300x400/343a40/6c757d"
+                      src="assets/CBC-portfolio.png"
                       alt="..."
                     />
+                  </div>
+                </div>
+              </div>
+              <!-- Project Card 4-->
+              <div class="card overflow-hidden shadow rounded-4 border-0">
+                <div class="card-body p-0">
+                  <div class="d-flex align-items-center">
+                    <div class="p-5">
+                      <h2 class="fw-bolder">Adama</h2>
+                      <p>
+                        J'ai créé, avec deux autres étudiants, un jeu de
+                        plateforme en 2D de type "Terraria" nommé "Adama" lors
+                        de ma première année de BUT informatique. Le
+                        développement s'est effectué en Java et JavaFX.
+                      </p>
+                      <i
+                        class="language-icon devicon-java-plain-wordmark colored"
+                      ></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -100,7 +230,6 @@
           </div>
         </div>
       </section>
-      <!-- Call to action section-->
     </main>
     <!-- Footer-->
     <footer class="bg-white py-4 mt-auto">
@@ -109,8 +238,9 @@
           class="row align-items-center justify-content-between flex-column flex-sm-row"
         >
           <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Lior Lichten 2023</div>
+            <div class="small m-0">Copyright &copy; Lior Lichten 2024</div>
           </div>
+        </div>
       </div>
     </footer>
     <!-- Bootstrap core JS-->
