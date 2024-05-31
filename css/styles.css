@@ -14,6 +14,11 @@
   padding-bottom: 15px;
 }
 
+#python-icon{
+  width: 10%;
+  height: 10%;
+  padding-top: 3%;
+}
 
 :root {
   --bs-blue: #1e30f3;
