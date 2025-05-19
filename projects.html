@@ -35,9 +35,9 @@
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
-          <a class="navbar-brand" href="index.html"
-            ><span class="fw-bolder text-primary">Lior Lichten</span></a
-          >
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/favicon.svg" alt="portfolio" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -67,6 +67,7 @@
           </div>
         </div>
       </nav>
+
       <!-- Portfolio Section-->
       <section class="py-5">
         <div class="container px-5 mb-5">
@@ -76,8 +77,8 @@
             </h1>
           </div>
           <div class="row gx-5 justify-content-center">
-            <!-- Project Card 1-->
             <div class="col-lg-11 col-xl-9 col-xxl-8">
+              <!-- Covoit -->
               <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                 <div class="card-body p-0">
                   <div class="d-flex align-items-center">
@@ -86,25 +87,50 @@
                       <p>
                         Covoit est une application web de co-voiturage que j'ai
                         développée avec 4 autres étudiants lors de notre 3ème
-                        année de BUT informatique. Elle a été développé à
-                        l'initative des étudiants de l'IUT de Tremblay, qui nous
-                        ont fourni un cahier des charges. Cette dernière avait
-                        pour but de créer l'équvalent d'un Blablacar pour
-                        étudiants. Nous avons commencé par réaliser une étude de
-                        conception, puis nous avons codé. Le front est en
-                        Angular, l'API en Flask et la base de données est sur
-                        Mongobd Atlas. la dockerisation a été entamée.
+                        année de BUT informatique. Le front est en Angular,
+                        l'API en Flask, la base de données en MongoDB Atlas. La
+                        dockerisation a été entamée.
                       </p>
+                      <div class="icon-wrapper" data-label="Angular">
+                        <i class="devicon-angularjs-plain colored"></i>
+                        <div class="icon-tooltip">Angular</div>
+                      </div>
 
-                      <i class="devicon-angularjs-plain colored"></i>
-                      <i class="devicon-flask-original colored"></i>
-                      <i class="devicon-mongodb-plain colored"></i>
-                      <i class="devicon-docker-plain colored"></i>
+                      <div class="icon-wrapper" data-label="Flask">
+                        <i class="devicon-flask-original colored"></i>
+                        <div class="icon-tooltip">Flask</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="MongoDB">
+                        <i class="devicon-mongodb-plain colored"></i>
+                        <div class="icon-tooltip">MongoDB</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="Docker">
+                        <i class="devicon-docker-plain colored"></i>
+                        <div class="icon-tooltip">Docker</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="Git">
+                        <i class="devicon-git-plain colored"></i>
+                        <div class="icon-tooltip">Git</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="Trello">
+                        <i class="devicon-trello-plain colored"></i>
+                        <div class="icon-tooltip">Trello</div>
+                      </div>
                     </div>
+                    <img
+                      class="img-fluid project-img clickable-image"
+                      src="assets/covoit.png"
+                      alt="Covoit screenshot"
+                    />
                   </div>
                 </div>
               </div>
-              <!-- Project Card 2-->
+
+              <!-- Enjoy your meal -->
               <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                 <div class="card-body p-0">
                   <div class="d-flex align-items-center">
@@ -113,36 +139,51 @@
                       <p>
                         "Enjoy Your Meal" est une application mobile que j'ai
                         développée avec deux autres étudiants lors de notre 2ème
-                        années de BUT informatique. Elle permet de créer et de
-                        partager des recettes de cuisine. L'application a été
-                        conçu avec Android Studio et le langage Java, tandis que
-                        l'API a été codé en PHP avec une base de données MySQL.
-                        "Enjoy Your Meal" offre une plateforme conviviale aux
-                        amateurs de cuisine pour qu'ils puissent partager leurs
-                        créations culinaires et explorer les recettes d'autres
-                        utilisateurs.
+                        année de BUT informatique. L'application a été conçue
+                        avec Android Studio et Java, l’API en PHP et la base de
+                        données en MySQL.
                       </p>
 
-                      <i
-                        class="language-icon devicon-androidstudio-plain colored"
-                      ></i>
-                      <i
-                        class="language-icon devicon-java-plain-wordmark colored"
-                      ></i>
-                      <i class="language-icon devicon-php-plain colored"></i>
-                      <i
-                        class="language-icon devicon-mysql-original colored"
-                      ></i>
+                      <div class="icon-wrapper" data-label="Android Studio">
+                        <i class="devicon-androidstudio-plain colored"></i>
+                        <div class="icon-tooltip">Android Studio</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="Java">
+                        <i class="devicon-java-plain colored"></i>
+                        <div class="icon-tooltip">Java</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="PHP">
+                        <i class="devicon-php-plain colored"></i>
+                        <div class="icon-tooltip">PHP</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="MySQL">
+                        <i class="devicon-mysql-original colored"></i>
+                        <div class="icon-tooltip">MySQL</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="Git">
+                        <i class="devicon-git-plain colored"></i>
+                        <div class="icon-tooltip">Git</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="Trello">
+                        <i class="devicon-trello-plain colored"></i>
+                        <div class="icon-tooltip">Trello</div>
+                      </div>
                     </div>
                     <img
-                      class="img-fluid"
+                      class="img-fluid clickable-image"
                       src="assets/Enjoy your meal.jpg"
                       alt="..."
                     />
                   </div>
                 </div>
               </div>
-              <!-- Project Card 3-->
+
+              <!-- Adama -->
               <div class="card overflow-hidden shadow rounded-4 border-0">
                 <div class="card-body p-0">
                   <div class="d-flex align-items-center">
@@ -154,18 +195,37 @@
                         de ma première année de BUT informatique. Le
                         développement s'est effectué en Java et JavaFX.
                       </p>
-                      <i
-                        class="language-icon devicon-java-plain-wordmark colored"
-                      ></i>
+
+                      <div class="icon-wrapper" data-label="Java">
+                        <i class="devicon-java-plain colored"></i>
+                        <div class="icon-tooltip">Java</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="Git">
+                        <i class="devicon-git-plain colored"></i>
+                        <div class="icon-tooltip">Git</div>
+                      </div>
+
+                      <div class="icon-wrapper" data-label="Trello">
+                        <i class="devicon-trello-plain colored"></i>
+                        <div class="icon-tooltip">Trello</div>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <!-- Modal -->
+              <div id="image-modal">
+                <a href="#" class="close">&times;</a>
+                <img id="modal-image" src="" alt="Agrandissement" />
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <!-- Footer-->
     <footer class="bg-white py-4 mt-auto">
       <div class="container px-5">
@@ -173,11 +233,19 @@
           class="row align-items-center justify-content-between flex-column flex-sm-row"
         >
           <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Lior Lichten 2024</div>
+            <div class="small m-0">
+              <p>
+                Copyright &copy; Lior Lichten
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

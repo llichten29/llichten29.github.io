@@ -119,10 +119,13 @@ i{
   margin-right: 10px;
 
 }
-.language-icon { 
-  font-size: 75px !important;
-  height: 75px;
-  width: 75px; 
+
+.language-icon {
+  width: 60px;
+  height: 60px;
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
 }
 .angular-icon{
   color: red !important
@@ -132,6 +135,42 @@ i{
   font-size: 24px;
   margin-right: 0;
 }
+
+.icon-wrapper {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.icon-tooltip {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .language-icon {
+    width: 32px;
+    margin-right: 6px;
+  }
+
+  .icon-tooltip {
+    font-size: 10px;
+    padding: 3px 5px;
+  }
+}
+
+
 
 hr {
   margin: 1rem 0;
@@ -11760,4 +11799,43 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+.project-img {
+  max-width: 200px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+#image-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#image-modal img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 80vh;
+}
+
+#image-modal:target {
+  display: block;
+}
+
+#image-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
 }

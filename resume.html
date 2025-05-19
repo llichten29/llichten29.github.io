@@ -36,9 +36,11 @@
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
-          <a class="navbar-brand" href="index.html"
-            ><span class="fw-bolder text-primary">Lior Lichten</span></a
-          >
+          <a class="navbar-brand" href="index.html">
+            <span class="fw-bolder bootstrap-icons">
+              <img src="assets/favicon.svg" alt="portfolio" />
+            </span>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -61,10 +63,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="skills.html">Compétences</a>
               </li>
+              <!--
               <li class="nav-item">
                 <a class="nav-link" href="projects.html">Projets</a>
               </li>
-            </ul>
+            --></ul>
           </div>
         </div>
       </nav>
@@ -82,12 +85,14 @@
               <div
                 class="d-flex align-items-center justify-content-between mb-4"
               >
-                <h2 class="text-primary fw-bolder mb-0">Experiences</h2>
+                <h2 class="text-primary fw-bolder mb-0">
+                  Experiences professionnel
+                </h2>
                 <!-- Download resume button-->
                 <!-- Note: Set the link href target to a PDF file within your project-->
                 <a
                   class="btn btn-primary px-4 py-3"
-                  href="assets/CV Lior Lichten 2024.pdf"
+                  href="assets/CV Lior Lichten 2025.pdf"
                 >
                   <div class="d-inline-block bi bi-download me-2"></div>
                   Télécharger le cv
@@ -99,9 +104,11 @@
                   <div class="row align-items-center gx-5">
                     <div class="col text-center text-lg-start mb-4 mb-lg-0">
                       <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">2024</div>
+                        <div class="text-primary fw-bolder mb-2">
+                          Mai - Aout 2024
+                        </div>
                         <div class="small fw-bolder">
-                          Stage en développement IA
+                          Stagiaire développeur IA junior
                         </div>
                         <div class="small text-muted">LIASD</div>
                         <div class="small text-muted">Montreuil, 93100</div>
@@ -111,34 +118,85 @@
                       <div>
                         <p>
                           &emsp; &emsp; A l'issue de ma troisième année, j'ai
-                          effectué mon stage en développement d'IA chez LIASD.
-                          J'ai eu pour missions de créer SecreatIA, un chatbot
-                          qui répond à toutes sortes de questions en lien avec
-                          l'IUT de Montreuil.
+                          travailler au sein du Laboratoire d'Intélligence
+                          Artificielle et Sémentique des Données (LIASD) en tant
+                          que stagiaire développeur IA junior. Ainsi, le stage
+                          s'est déroulé au sein de l'IUT de Montreuil. Au moment
+                          de commencer le stage, le département informatique
+                          n'avait plus de secratriat et beaucoup d'étudiants se
+                          posait des questions d'ordre administrative. Et c'est
+                          pour répondre à ces besoins que mon maitre de stage a
+                          lancé le projet SecreatIA, un chatbot qui répond à
+                          toutes sortes de questions en lien avec l'IUT de
+                          Montreuil. Ainsi, j'ai eu pour mission de le créer en
+                          partant de zéro.
                         </p>
                         <p>
-                          &emsp;&emsp; J'ai d'abord dû constituer le jeu de
-                          données (ou dataset) sur Google Sheets. Puis, j'ai dû
-                          faire des recherches sur les techniques d'IA (data
-                          augmentation, pre-processing, librairie python,
-                          modèle). Ensuite, j'ai mis en application ces
-                          recherches sur python. J'ai utilisé de nombreuses
-                          librairies pour préparer le texte à l'IA. J'ai
-                          notamment utilisé NLTK, numpy, pandas, scikit-learn,
-                          etc. Cela a permis à l'IA de comprehendre les données.
-                          En outre, mon tuteur de stage et moi avons décidé du
-                          modèle que nous utiliserons. Il s'agit d'un LSTM.
-                          Puis, j'ai entrainé ce modèle.
+                          &emsp;&emsp; J'ai commencé par constituer le jeu de
+                          données (ou dataset) sur Google Sheetsà partir de
+                          sondages et d’entretiens avec des professeurs. Une
+                          fois que j'avais un dataset avec suffisamment de
+                          questions, je me suis attelé à l’étape suivante, le
+                          preprocessing. J’ai ainsi codé en Python via de
+                          nombreuses librairies dont Pandas et NLTK. J’ai
+                          ensuite développé via TensorFlow les méthodes pour
+                          créer, évaluer et testé les modèles suivants : RNN,
+                          LSTM, GRU, CNN 1D et MLP. Cette expérience m’a permis
+                          de mieux comprendre l’IA, mais aussi de réaliser que
+                          ce domaine ne me correspond pas. Je me sens plus
+                          épanoui dans le développement full stack.
                         </p>
-                        <div>
+                        <!-- Icone-->
+                        <!-- Python-->
+                        <div class="icon-wrapper" data-label="Python">
                           <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
-                            id="python-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            class="language-icon"
                           />
+                          <div class="icon-tooltip">Python</div>
+                        </div>
+
+                        <!-- Tensorflow-->
+                        <div class="icon-wrapper" data-label="Tensorflow">
+                          <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+                            class="language-icon"
+                          />
+                          <div class="icon-tooltip">Tensorflow</div>
+                        </div>
+
+                        <!-- Pandas-->
+                        <div class="icon-wrapper" data-label="Pandas">
+                          <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                            class="language-icon"
+                          />
+                          <div class="icon-tooltip">Pandas</div>
+                        </div>
+
+                        <!-- Google Sheets-->
+                        <div class="icon-wrapper" data-label="Google Sheets">
                           <img
                             src="assets/google-sheets-icon.svg"
-                            alt="google-sheets-icon"
+                            class="language-icon"
                           />
+                          <div class="icon-tooltip">Google Sheets</div>
+                        </div>
+                        <!-- Git -->
+                        <div class="icon-wrapper" data-label="Git">
+                          <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                            class="language-icon"
+                          />
+                          <div class="icon-tooltip">Git</div>
+                        </div>
+                        <!-- Trello -->
+                        <div class="icon-wrapper" data-label="Trello">
+                          <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg"
+                            class="language-icon"
+                          />
+                          <div class="icon-tooltip">Trello</div>
                         </div>
                       </div>
                     </div>
@@ -151,12 +209,14 @@
                   <div class="row align-items-center gx-5">
                     <div class="col text-center text-lg-start mb-4 mb-lg-0">
                       <div class="bg-light p-4 rounded-4">
-                        <div class="text-primary fw-bolder mb-2">2023</div>
+                        <div class="text-primary fw-bolder mb-2">
+                          Mai - Juillet 2023
+                        </div>
                         <div class="small fw-bolder">
-                          Stage en développement no/low code
+                          Stagiaire développeur no code junior
                         </div>
                         <div class="small text-muted">Coeur du Web</div>
-                        <div class="small text-muted">Cachan 94230</div>
+                        <div class="small text-muted">Cachan, 94230</div>
                       </div>
                     </div>
                     <div class="col-lg-8">
@@ -173,10 +233,28 @@
                         <li>
                           Concevoir l'alpha d'une application de comparatif des
                           prix des produits parapharmaceutiques. Cette
-                          application est destinée à toutes les plateformes
+                          application est destinée à tosutes les plateformes
                           (web, IOS, Android).
                         </li>
                       </ul>
+                      <!--Icone-->
+                      <!-- Flutterflow-->
+                      <div class="icon-wrapper" data-label="FlutterFlow">
+                        <img
+                          src="assets/FlutterFlow.svg"
+                          class="language-icon"
+                        />
+                        <div class="icon-tooltip">FlutterFlow</div>
+                      </div>
+
+                      <!-- Supabase-->
+                      <div class="icon-wrapper" data-label="Supabase">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
+                          class="language-icon"
+                        />
+                        <div class="icon-tooltip">Supabase</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -185,7 +263,83 @@
             <!-- Education Section-->
             <section>
               <h2 class="text-secondary fw-bolder mb-4">Formation</h2>
-              <!-- Education Card 1-->
+              <!-- Education Card 1 Mastère en architecte logiciel-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-secondary fw-bolder mb-2">
+                          2025 - 2027
+                        </div>
+                        <div class="mb-2">
+                          <div class="small fw-bolder">ESGI</div>
+                          <div class="small text-muted">Paris, 75012</div>
+                        </div>
+                        <div class="fst-italic">
+                          <div class="small text-muted">
+                            Mastère architecture des logiciels
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        J’ai été admis à l’ESGI pour intégrer le mastère en
+                        Architecture des Logiciels. Ce programme offre une
+                        formation avancée autour de l’architecture logicielle,
+                        la sécurité, les technologies émergentes (Blockchain,
+                        Cloud, Rust), et les pratiques modernes de développement
+                        (Clean Code, DevOps, DDD, BDD). Il permet également
+                        d’approfondir des domaines comme le développement
+                        mobile, le machine learning, la programmation réactive,
+                        ou encore la programmation fonctionnelle.
+                        <br /><br />
+                        En plus des projets annuels, missions en entreprise et
+                        hackathons, cette formation développe les compétences
+                        pour concevoir et superviser des architectures robustes,
+                        managériales et sécurisées, en environnement agile et
+                        distribué.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Education Card 2 - CNAM-->
+              <div class="card shadow border-0 rounded-4 mb-5">
+                <div class="card-body p-5">
+                  <div class="row align-items-center gx-5">
+                    <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                      <div class="bg-light p-4 rounded-4">
+                        <div class="text-secondary fw-bolder mb-2">
+                          2024 - 2025
+                        </div>
+                        <div class="mb-2">
+                          <div class="small fw-bolder">CNAM Paris</div>
+                          <div class="small text-muted">Paris, 75003</div>
+                        </div>
+                        <div class="fst-italic">
+                          <div class="small text-muted">
+                            SMB101 - Systèmes d'exploitation : principes,
+                            programmation et virtualisation
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div>
+                        En parallèle de ma recherche d'alternance, je me suis
+                        inscrit au CNAM afin de continuer à progresser dans le
+                        domaine du développement. Le cours SMB101 m’a permis
+                        d’approfondir ma compréhension des systèmes
+                        d’exploitation, en alliant théorie et pratique autour de
+                        la virtualisation et de la programmation système.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Education Card 3 - BUT informatique-->
               <div class="card shadow border-0 rounded-4 mb-5">
                 <div class="card-body p-5">
                   <div class="row align-items-center gx-5">
@@ -211,7 +365,7 @@
                       <div>
                         Après mon baccalauréat, je me suis orienté vers
                         l'informatique en rejoignant l'IUT de Montreuil. Au
-                        terme de ma deuxième année, j'ai opté pour le parcours
+                        terme de ma permière année, j'ai opté pour le parcours
                         "réalisation d'applications" qui met l'accent sur la
                         conception, le développement et la validation de
                         logiciels.
@@ -220,7 +374,7 @@
                   </div>
                 </div>
               </div>
-              <!-- Education Card 2-->
+              <!-- Education Card 4 - Bacalauréat-->
               <div class="card shadow border-0 rounded-4 mb-5">
                 <div class="card-body p-5">
                   <div class="row align-items-center gx-5">
@@ -231,14 +385,14 @@
                         </div>
                         <div class="mb-2">
                           <div class="small fw-bolder">Lycée Arago</div>
-                          <div class="small text-muted">Paris 75012</div>
+                          <div class="small text-muted">Paris, 75012</div>
                         </div>
                         <div class="fst-italic">
                           <div class="small text-muted">
                             Baccalauréat général
                           </div>
                           <div class="small text-muted">
-                            spécialités math, NSI
+                            spécialités Math, NSI
                           </div>
                         </div>
                       </div>
@@ -269,7 +423,14 @@
           class="row align-items-center justify-content-between flex-column flex-sm-row"
         >
           <div class="col-auto">
-            <div class="small m-0">Copyright &copy; Lior Lichten 2024</div>
+            <div class="small m-0">
+              <p>
+                Copyright &copy; Lior Lichten
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </p>
+            </div>
           </div>
         </div>
       </div>

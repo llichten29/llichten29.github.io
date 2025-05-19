@@ -1,7 +1,19 @@
-/*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+
+document.querySelectorAll('.icon-wrapper').forEach(wrapper => {
+  const tooltip = wrapper.querySelector('.icon-tooltip');
+  wrapper.addEventListener('mouseenter', () => {
+    tooltip.style.display = 'block';
+  });
+  wrapper.addEventListener('mouseleave', () => {
+    tooltip.style.display = 'none';
+  });
+});
+
+document.querySelectorAll('.clickable-image').forEach(img => {
+  img.addEventListener('click', () => {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-image');
+    modalImg.src = img.src;
+    window.location.hash = 'image-modal';
+  });
+});
