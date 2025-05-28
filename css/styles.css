@@ -120,6 +120,225 @@ i{
 
 }
 
+
+
+#container-limit-but{
+  margin-left: 0;
+  margin-right: auto;
+  width: 100%;
+  /*padding: 1.5rem 0 1.5rem 0;*/
+  border-radius: 2rem;
+  margin-top: 2rem;
+  background: #f8f9fa;
+}
+
+/*
+
+#container-limit-but {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+*/
+
+.matieres-cnam-grid button {
+    min-height: 60px;
+  }
+
+#container-limit-but .matieres-grid-container {
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 0;
+  padding-right: 1rem;
+  padding-top: 1rem;       /* padding haut réduit */
+  padding-bottom: 2.5rem;  /* padding bas augmenté */
+  background-color: #f8f9fa;
+  border-radius: 2rem;
+
+}
+
+  .matieres-grid-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 2rem;
+  }
+
+  .matieres-grid h4 {
+    margin-bottom: 1.5rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .matieres-cnam {
+    padding: 4rem 0 3rem 0;
+    background-color: #f8f9fa;
+    border-radius: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .matieres-inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .uniform-btn {
+    min-width: 18rem;
+    text-align: center;
+  }
+
+  
+
+  .align-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-limit {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .matieres-cnam-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin-top: 2rem;
+    
+  }
+
+  .matiere-btn {
+    background-color: #6262ff;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    white-space: nowrap;
+    cursor: default;
+
+  }
+  .matieres-grid-container{
+    background-color: #f8f9fa;
+  }
+
+  .bloc-matieres-toggle {
+    background: #f8f9fa;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  .bloc-matieres-toggle span.fw-bold {
+    font-size: 1.25rem;
+  }
+
+  .matieres-grid {
+    display: none;
+  }
+
+  .matieres-grid.show {
+    display: block;
+  }
+
+  .carte {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border: 1px solid #ccd5ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carte h5 {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #e21e80;
+    text-align: center;
+  }
+
+  .carte button {
+    width: 87%;
+    min-height: 2rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #6262ff;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    cursor: default;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0.25rem 0;
+  }
+
+  @media (max-width: 576px) {
+  .matieres-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .matieres-grid .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .carte {
+    background-color: #f8f8f8;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .carte h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .carte button {
+    display: block;
+    width: 100%;
+    margin: 0.25rem auto;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    border: none;
+    background-color: #e0e0e0;
+    color: #333;
+  }
+
+  .carte button:disabled {
+    opacity: 0.7;
+  }
+}
+
+  
 .language-icon {
   width: 60px;
   height: 60px;
@@ -11838,4 +12057,69 @@ html {
   font-size: 40px;
   color: white;
   text-decoration: none;
+}
+
+
+
+/* CNAM Collapsable Styles Fix */
+.matieres-cnam-container {
+  background-color: #f8f9fa;
+  border-radius: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem; /* Ajoute un espace au-dessus */
+}
+
+.bloc-matieres-toggle-cnam {
+  background: #f8f9fa;
+  padding: 2rem 2.5rem;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bloc-matieres-toggle-cnam span.fw-bold {
+  font-size: 1.25rem;
+}
+
+.matieres-cnam-grid {
+  display: none;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 2rem;
+  justify-content: center; /* Centrage horizontal */
+}
+
+.matieres-cnam-grid.show {
+  display: flex;
+}
+
+/* Ajustement padding bloc CNAM */
+.matieres-cnam-container {
+  padding: 1.5rem 0 1.5rem 0; /* Réduction haut et bas */
+}
+
+.bloc-matieres-toggle-cnam {
+  padding: 1.25rem 2rem; /* Réduction du padding vertical */
+}
+
+/* Centrage horizontal des blocs matières */
+.container-limit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Les blocs de matières prennent toute la largeur disponible */
+.container-limit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.matieres-grid-container,
+.matieres-cnam-container {
+  width: 100%;
 }

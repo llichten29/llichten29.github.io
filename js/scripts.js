@@ -17,3 +17,23 @@ document.querySelectorAll('.clickable-image').forEach(img => {
     window.location.hash = 'image-modal';
   });
 });
+
+ function toggleMatieresCnam(el) {
+    const container = el.closest('.matieres-grid-container');
+    const grid = container.querySelector('.matieres-cnam-grid');
+    const icon = el.querySelector('.chevron i');
+    const isVisible = grid.style.display === 'block';
+    grid.style.display = isVisible ? 'none' : 'block';
+    icon.classList.toggle('bi-chevron-down', isVisible);
+    icon.classList.toggle('bi-chevron-up', !isVisible);
+  }
+
+  function toggleMatieres(el) {
+    const container = el.closest('.matieres-grid-container');
+    const grid = container.querySelector('.matieres-grid');
+    const icon = el.querySelector('.chevron i');
+    const isVisible = grid.style.display === 'block';
+    grid.style.display = isVisible ? 'none' : 'block';
+    icon.classList.toggle('bi-chevron-down', isVisible);
+    icon.classList.toggle('bi-chevron-up', !isVisible);
+  }
