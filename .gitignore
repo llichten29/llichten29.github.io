@@ -1,2 +1,31 @@
 Consigne PortFolio.pdf
 *.docx
+
+# Node.js
+node_modules/
+package-lock.json
+package.json
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Visual Studio Code
+.vscode/
+
+# Fichiers générés ou sensibles
+*.log
+*.gpg
+*.bak
+*~
+
+# Dossiers internes potentiellement générés automatiquement
+/managed_context/
+/test_suite_analysis/
+
+# Autres fichiers sensibles ou temporaires
+.env
